@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Торговая площадка - Игровые предметы</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Шапка-->
+    <div class="container">
+        <header class="header-main">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="ri-camera-lens-line"></i>
+                </div>
+                <div class="nav-links">
+                    <a href="#" class="nav-link">Купить</a>
+                    <a href="#" class="nav-link">Продать</a>
+                    <a href="#" class="nav-link">Поддержка</a>
+                    <a href="#" class="nav-link">FAQ</a>
+                </div>
+                <div class="logo-section">
+                    <button class="all-projects"> 
+                        <i class="ri-apps-line"></i>
+                        <h3>Все проекты</h3>
+                    </button>
+                    <button class="marketapp-title">
+                        <i class="ri-camera-lens-line"></i>
+                        <h3>MarketApp</h3>
+                    </button>
+                </div>
+                
+                <select class="currency-control">
+                    <option>RUB</option>
+                    <option>₽ RUB</option>
+                    <option>$ USD</option>
+                    <option>€ EUR</option>
+                </select>
+                
+                
+                <select class="country-control">
+                    <option>Ру</option>
+                </select>
+
+                <button class="chat-help">
+                    <i class="ri-chat-3-line"></i>
+                </button>
+                
+                <button class="steam-login">        
+                    <h3>Войти через Steam</h3>
+                </button>
+                
+                <button class="cart-buy">
+                    <i class="ri-shopping-cart-2-line"></i>
+                </button>
+                
+            </div>
+        </header>
+
+    <div class="container">
+        <div class="main-content">
+
+            <!--фильтры -->
+            <aside class="sidebar">
+                <div class="filters-panel">
+                    <h2 class="filters-title">                  
+                        Фильтры: 
+                    </h2>
+
+                        
+                    
+
+                    <div class="filter-group">
+                        
+                        
+                        <div class="price-inputs">
+                            <label class="filter-label-ot">Цена от:
+                                <input type="text" class="price-input" placeholder="0">
+                            </label>
+                            <label class="filter-label-do">Цена до:
+                                <input type="text" class="price-input" placeholder="100000">
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label class="filter-label">Качество</label>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">Прямо с завода</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">Немного поношенное</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox" checked>
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">После полевых испытаний</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">Поношенное</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">Закаленное в боях</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">Не покрашено</span>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label class="filter-label">Раритетность</label>
+                        <div class="filter-options">
+                            <label class="filter-option">
+                                <input type="checkbox" checked>
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">Ширпотреб</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">Промышленное качество</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">Армейское качество</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">Запрещенное</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">Засекреченное</span>
+                            </label>
+                            <label class="filter-option">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <span class="filter-option-text">Тайное</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <!--main-->
+
+            <main class="content-area">
+                <div class="categories-panel">                  
+                    <div class="categories-list">
+                        <select class="category"><option>Пистолет</option></select>
+                        <select class="category"><option>Снайперская винтовка</option></select>
+                        <select class="category"><option>Пистолет-пулемет</option></select>
+                        <select class="category"><option>Пулемет</option></select>
+                        <select class="category"><option>Дробовик</option></select>                        
+                        <select class="category"><option>Нож</option></select>
+                        <select class="category"><option>Перчатки</option></select>
+                        <select class="category"><option>Контейнер</option></select>
+                        <select class="category"><option>Наклейка</option></select>
+                        <select class="category"><option>Другое</option></select>
+                    </div>
+                </div>
+                <div class="toolbar">
+                    <div class="quick-search">
+                        <input type="text" placeholder="Быстрый поиск">
+                        <button class="quick-search-btn">
+                            <i class="ri-search-line"></i>
+                        </button>
+                    </div> 
+                </div>
+                
+                <div class="sort-options">
+                    <span class="sort-label"></span>
+                        
+                    <select class="sort-select">
+                        <option>По умолчанию</option>
+                    </select>
+                    
+                </div>
+                <div class="invisibilyti"></div>
+
+                <div class="items-grid">
+                    <!-- Карточка товара 1 -->
+                    <div class="item-card">
+                        <div class="item-info">
+                            <h3 class="item-name">AWP | Dragon Lore</h3>
+                            <div class="item-meta">
+                                <span>Качество: Закаленное в боях</span>
+                            </div>
+                            <div class="item-price">85,000 ₽</div>
+                            <div class="item-actions">
+                                <button class="btn btn-buy">Купить</button>
+                                <button class="btn btn-sell">Продать</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка товара 2 -->
+                    <div class="item-card">
+                        <div class="item-info">
+                            <h3 class="item-name">AK-47 | Красная линия</h3>
+                            <div class="item-meta">
+                                <span>Качество: После полевых испытаний</span>
+                            </div>
+                            <div class="item-price">12,500 ₽</div>
+                            <div class="item-actions">
+                                <button class="btn btn-buy">Купить</button>
+                                <button class="btn btn-sell">Продать</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Карточка товара 3 -->
+                    <div class="item-card">
+                        <div class="item-info">
+                            <h3 class="item-name">Нож-бабочка | Ультрафиолет</h3>
+                            <div class="item-meta">
+                                <span>Качество: Прямо с завода</span>
+                            </div>
+                            <div class="item-price">150,000 ₽</div>
+                            <div class="item-actions">
+                                <button class="btn btn-buy">Купить</button>
+                                <button class="btn btn-sell">Продать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+</body>
+</html>
